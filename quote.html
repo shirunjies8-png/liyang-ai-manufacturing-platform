@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI 报价助手 | 溧阳制造企业 AI 获客平台</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a class="brand" href="index.html"><span class="brand-mark">AI</span><span>溧阳制造获客平台</span></a>
+      <button class="nav-toggle" aria-label="打开导航">☰</button>
+      <div class="nav-links">
+        <a href="index.html">首页</a>
+        <a href="enterprise.html">企业展示</a>
+        <a href="products.html">产品展示</a>
+        <a href="quote.html" class="active">AI 报价</a>
+        <a href="leads.html">询盘管理</a>
+        <a href="admin.html">管理后台</a>
+        <a href="jobs.html">招聘</a>
+        <a href="contact.html">联系我们</a>
+        <a href="competition.html" class="nav-highlight">参赛说明</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <p class="eyebrow">AI 报价助手</p>
+      <h1>输入需求，自动生成完整报价分析</h1>
+      <p>客户填写材料、数量、工艺和交期后，系统生成包含报价区间、加工难度、交期建议、风险提醒和微信回复话术的完整分析报告。</p>
+    </section>
+
+    <section class="section quote-section">
+      <form class="quote-form" id="quoteForm">
+        <div class="form-row">
+          <label for="material">材料</label>
+          <select id="material" required>
+            <option value="">请选择材料</option>
+            <option value="304 不锈钢">304 不锈钢</option>
+            <option value="316 不锈钢">316 不锈钢</option>
+            <option value="其他不锈钢材料">其他不锈钢材料</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="quantity">数量</label>
+          <input id="quantity" type="number" min="1" placeholder="例如：500" required>
+        </div>
+
+        <div class="form-row">
+          <label for="process">工艺</label>
+          <select id="process" required>
+            <option value="">请选择工艺</option>
+            <option value="CNC 加工">CNC 加工</option>
+            <option value="数控车加工">数控车加工</option>
+            <option value="CNC + 数控车复合加工">CNC + 数控车复合加工</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="delivery">交期</label>
+          <select id="delivery" required>
+            <option value="">请选择交期</option>
+            <option value="7 天内">7 天内</option>
+            <option value="15 天内">15 天内</option>
+            <option value="30 天内">30 天内</option>
+            <option value="可协商">可协商</option>
+          </select>
+        </div>
+
+        <div class="form-row full">
+          <label for="notes">补充说明</label>
+          <textarea id="notes" rows="4" placeholder="可填写尺寸、图纸情况、表面处理、包装要求等"></textarea>
+        </div>
+
+        <div class="form-actions full">
+          <button class="btn secondary" type="button" id="fillQuoteExample">一键填充示例需求</button>
+          <button class="btn primary" type="submit">生成完整报价分析</button>
+        </div>
+      </form>
+
+      <aside class="quote-result" id="quoteResult">
+        <p class="eyebrow">生成结果</p>
+        <h2>等待客户输入需求</h2>
+        <p>提交后，这里会生成包含报价区间、加工难度、交期建议、风险提醒和微信回复话术的完整分析报告。</p>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 溧阳制造企业 AI 获客平台 Demo</p>
+    <p>本报价为演示逻辑，正式报价需结合图纸、材料价格和工艺评估。</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

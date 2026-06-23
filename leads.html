@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>询盘管理 | 溧阳制造企业 AI 获客平台</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a class="brand" href="index.html"><span class="brand-mark">AI</span><span>溧阳制造获客平台</span></a>
+      <button class="nav-toggle" aria-label="打开导航">☰</button>
+      <div class="nav-links">
+        <a href="index.html">首页</a>
+        <a href="enterprise.html">企业展示</a>
+        <a href="products.html">产品展示</a>
+        <a href="quote.html">AI 报价</a>
+        <a href="leads.html" class="active">询盘管理</a>
+        <a href="admin.html">管理后台</a>
+        <a href="jobs.html">招聘</a>
+        <a href="contact.html">联系我们</a>
+        <a href="competition.html" class="nav-highlight">参赛说明</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <p class="eyebrow">询盘管理</p>
+      <h1>客户询盘列表</h1>
+      <p>管理所有客户询盘，跟踪报价状态和成交进度。</p>
+    </section>
+
+    <section class="section">
+      <div class="leads-stats">
+        <div class="stat-card">
+          <strong id="totalLeads">5</strong>
+          <span>总询盘数</span>
+        </div>
+        <div class="stat-card">
+          <strong id="pendingLeads">2</strong>
+          <span>待联系</span>
+        </div>
+        <div class="stat-card">
+          <strong id="quotedLeads">2</strong>
+          <span>已报价</span>
+        </div>
+        <div class="stat-card">
+          <strong id="wonLeads">1</strong>
+          <span>已成交</span>
+        </div>
+      </div>
+
+      <div class="leads-table-wrapper">
+        <table class="leads-table" id="leadsTable">
+          <thead>
+            <tr>
+              <th>客户姓名</th>
+              <th>需求产品</th>
+              <th>数量</th>
+              <th>工艺</th>
+              <th>AI 报价结果</th>
+              <th>跟进状态</th>
+              <th>操作</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr data-id="1">
+              <td>张经理</td>
+              <td>不锈钢连接件</td>
+              <td>500 件</td>
+              <td>CNC 加工</td>
+              <td><span class="lead-tag tag-quote">标准批量单价</span></td>
+              <td><span class="lead-status status-pending">待联系</span></td>
+              <td><button class="btn-small" onclick="updateStatus(1)">更新状态</button></td>
+            </tr>
+            <tr data-id="2">
+              <td>李总</td>
+              <td>316 不锈钢轴</td>
+              <td>200 件</td>
+              <td>数控车加工</td>
+              <td><span class="lead-tag tag-quote">中等批量单价</span></td>
+              <td><span class="lead-status status-quoted">已报价</span></td>
+              <td><button class="btn-small" onclick="updateStatus(2)">更新状态</button></td>
+            </tr>
+            <tr data-id="3">
+              <td>王工</td>
+              <td>不锈钢支撑件</td>
+              <td>1000 件</td>
+              <td>CNC + 数控车复合</td>
+              <td><span class="lead-tag tag-high">偏高单价区间</span></td>
+              <td><span class="lead-status status-quoted">已报价</span></td>
+              <td><button class="btn-small" onclick="updateStatus(3)">更新状态</button></td>
+            </tr>
+            <tr data-id="4">
+              <td>陈经理</td>
+              <td>304 不锈钢套筒</td>
+              <td>50 件</td>
+              <td>数控车加工</td>
+              <td><span class="lead-tag tag-quote">小批量试制价</span></td>
+              <td><span class="lead-status status-won">已成交</span></td>
+              <td><button class="btn-small" onclick="updateStatus(4)">更新状态</button></td>
+            </tr>
+            <tr data-id="5">
+              <td>刘总</td>
+              <td>新能源零部件</td>
+              <td>300 件</td>
+              <td>CNC 加工</td>
+              <td><span class="lead-tag tag-quote">标准批量单价</span></td>
+              <td><span class="lead-status status-pending">待联系</span></td>
+              <td><button class="btn-small" onclick="updateStatus(5)">更新状态</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 溧阳制造企业 AI 获客平台 Demo</p>
+    <p>询盘管理：跟踪客户询盘状态</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

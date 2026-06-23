@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>管理后台 | 溧阳制造企业 AI 获客平台</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a class="brand" href="index.html"><span class="brand-mark">AI</span><span>溧阳制造获客平台</span></a>
+      <button class="nav-toggle" aria-label="打开导航">☰</button>
+      <div class="nav-links">
+        <a href="index.html">首页</a>
+        <a href="enterprise.html">企业展示</a>
+        <a href="products.html">产品展示</a>
+        <a href="quote.html">AI 报价</a>
+        <a href="leads.html">询盘管理</a>
+        <a href="admin.html" class="active">管理后台</a>
+        <a href="jobs.html">招聘</a>
+        <a href="contact.html">联系我们</a>
+        <a href="competition.html" class="nav-highlight">参赛说明</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <p class="eyebrow">管理后台</p>
+      <h1>AI 一键生成企业介绍</h1>
+      <p>录入企业基本信息，AI 自动生成企业简介、产品介绍、招聘文案和客户沟通话术。</p>
+    </section>
+
+    <section class="section admin-section">
+      <div class="admin-form-wrapper">
+        <form class="admin-form" id="adminForm">
+          <h2>企业信息录入</h2>
+          <div class="form-row">
+            <label for="companyName">企业名称</label>
+            <input id="companyName" type="text" placeholder="例如：溧阳五四不锈钢" required>
+          </div>
+          <div class="form-row">
+            <label for="mainProduct">主营产品</label>
+            <input id="mainProduct" type="text" placeholder="例如：不锈钢零部件" required>
+          </div>
+          <div class="form-row">
+            <label for="equipment">设备数量</label>
+            <input id="equipment" type="text" placeholder="例如：CNC 5台，数控车10台" required>
+          </div>
+          <div class="form-row">
+            <label for="serviceIndustry">服务行业</label>
+            <input id="serviceIndustry" type="text" placeholder="例如：新能源行业" required>
+          </div>
+          <div class="form-row">
+            <label for="advantages">企业优势</label>
+            <textarea id="advantages" rows="3" placeholder="例如：获得国家认可奖项，客户评价产品质量好、交付稳定" required></textarea>
+          </div>
+          <div class="form-row">
+            <label for="phone">联系电话</label>
+            <input id="phone" type="text" placeholder="例如：138-0000-0000">
+          </div>
+          <div class="form-row">
+            <label for="wechat">微信</label>
+            <input id="wechat" type="text" placeholder="例如：wxid_example">
+          </div>
+          <div class="form-row">
+            <label for="address">地址</label>
+            <input id="address" type="text" placeholder="例如：江苏省常州市溧阳市某工业园区">
+          </div>
+          <div class="form-actions full">
+            <button class="btn primary" type="submit">一键生成企业介绍</button>
+            <button class="btn secondary" type="button" id="saveAdminData">保存企业信息</button>
+            <button class="btn ghost" type="button" id="clearAdminData">清空示例数据</button>
+          </div>
+        </form>
+      </div>
+
+      <aside class="admin-result" id="adminResult">
+        <p class="eyebrow">生成结果</p>
+        <h2>等待录入企业信息</h2>
+        <p>填写左侧表单并点击"一键生成"，AI 将自动生成企业简介、产品介绍、招聘文案和客户沟通话术。</p>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 溧阳制造企业 AI 获客平台 Demo</p>
+    <p>管理后台：AI 一键生成企业介绍</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
