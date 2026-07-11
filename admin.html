@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>管理后台 | 溧阳制造企业 AI 获客平台</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <title>管理后台 | AI 工厂办公系统</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="site-header">
     <nav class="navbar">
-      <a class="brand" href="index.html"><span class="brand-mark">AI</span><span>溧阳制造获客平台</span></a>
+      <a class="brand" href="index.html"><span class="brand-mark">AI</span><span>AI 工厂办公系统</span></a>
       <button class="nav-toggle" aria-label="打开导航">☰</button>
       <div class="nav-links">
         <a href="index.html">首页</a>
@@ -17,6 +18,7 @@
         <a href="products.html">产品展示</a>
         <a href="quote.html">AI 报价</a>
         <a href="leads.html">询盘管理</a>
+        <a href="factory-office.html">AI 办公系统</a>
         <a href="admin.html" class="active">管理后台</a>
         <a href="jobs.html">招聘</a>
         <a href="contact.html">联系我们</a>
@@ -28,8 +30,27 @@
   <main>
     <section class="page-hero">
       <p class="eyebrow">管理后台</p>
-      <h1>AI 一键生成企业介绍</h1>
-      <p>录入企业基本信息，AI 自动生成企业简介、产品介绍、招聘文案和客户沟通话术。</p>
+      <h1>工厂后台管理</h1>
+      <p>录入企业基本信息，生成企业展示和客户沟通文案，并从后台进入 AI 报价、询盘管理、OCR、文档助手、客服回复、多 Agent、安全中心和系统监控。</p>
+    </section>
+
+    <section class="section compact-band" id="factoryOfficeEntrances">
+      <div class="section-heading">
+        <p class="eyebrow">后台快捷入口</p>
+        <h2>AI 工厂办公模块</h2>
+      </div>
+      <div class="module-grid">
+        <a href="quote.html" class="module-tile"><span>01</span><strong>AI 报价助手</strong><small>生成初步报价、风险提醒和客户话术</small></a>
+        <a href="leads.html" class="module-tile"><span>02</span><strong>询盘管理</strong><small>跟进客户状态、报价记录和成交进度</small></a>
+        <a href="factory-office.html#ocrCenter" class="module-tile"><span>03</span><strong>工厂单据 OCR 中心</strong><small>识别发货单、采购单、标签、日报、合同</small></a>
+        <a href="factory-office.html#docAssistant" class="module-tile"><span>04</span><strong>AI 文档助手</strong><small>总结、翻译、问答、风险提示</small></a>
+        <a href="factory-office.html#customerReply" class="module-tile"><span>05</span><strong>AI 客服回复</strong><small>询盘回复建议，关键承诺人工确认</small></a>
+        <a href="factory-office.html#agentDesk" class="module-tile"><span>06</span><strong>多 Agent 协同工作台</strong><small>报价、客服、OCR、销售、质检、安全 Agent</small></a>
+        <a href="factory-office.html#securityCenter" class="module-tile"><span>07</span><strong>AI 安全中心</strong><small>脱敏、审核、合同和报价风险提醒</small></a>
+        <a href="factory-office.html#stabilityCenter" class="module-tile"><span>08</span><strong>系统稳定性中心</strong><small>AI/OCR/接口/页面/响应慢问题记录</small></a>
+        <a href="factory-office.html#statusCenter" class="module-tile"><span>09</span><strong>工厂系统状态中心</strong><small>Demo/API、模型、版本、构建时间、耗时</small></a>
+        <a href="factory-office.html#exportCenter" class="module-tile"><span>10</span><strong>办公导出中心</strong><small>OCR、报价单、客户清单、询盘记录导出</small></a>
+      </div>
     </section>
 
     <section class="section admin-section">
@@ -69,7 +90,7 @@
             <input id="address" type="text" placeholder="例如：江苏省常州市溧阳市某工业园区">
           </div>
           <div class="form-actions full">
-            <button class="btn primary" type="submit">一键生成企业介绍</button>
+            <button class="btn primary" type="submit">生成企业介绍与办公文案</button>
             <button class="btn secondary" type="button" id="saveAdminData">保存企业信息</button>
             <button class="btn ghost" type="button" id="clearAdminData">清空示例数据</button>
           </div>
@@ -79,14 +100,14 @@
       <aside class="admin-result" id="adminResult">
         <p class="eyebrow">生成结果</p>
         <h2>等待录入企业信息</h2>
-        <p>填写左侧表单并点击"一键生成"，AI 将自动生成企业简介、产品介绍、招聘文案和客户沟通话术。</p>
+        <p>填写左侧表单并点击生成，AI 将自动生成企业简介、产品介绍、招聘文案和客户沟通话术，并提示人工确认边界。</p>
       </aside>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>© 2026 溧阳制造企业 AI 获客平台 Demo</p>
-    <p>管理后台：AI 一键生成企业介绍</p>
+    <p>© 2026 AI Factory Office OS Demo</p>
+    <p>管理后台：企业展示、AI 报价、询盘管理和 AI 工厂办公模块入口</p>
   </footer>
 
   <script src="js/app.js"></script>

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <title>AI 工厂办公系统 | AI Factory Office OS</title>
+  <meta name="description" content="面向中小工厂的 AI 工厂办公系统，整合 OCR 单据识别、AI 文档助手、客服回复、多 Agent 协同、AI 安全中心和系统稳定性监控。">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a class="brand" href="index.html"><span class="brand-mark">AI</span><span>AI Factory Office OS</span></a>
+      <button class="nav-toggle" aria-label="打开导航">☰</button>
+      <div class="nav-links">
+        <a href="index.html">首页</a>
+        <a href="enterprise.html">企业展示</a>
+        <a href="products.html">产品展示</a>
+        <a href="quote.html">AI 报价</a>
+        <a href="leads.html">询盘管理</a>
+        <a href="factory-office.html" class="active">AI 办公系统</a>
+        <a href="admin.html">管理后台</a>
+        <a href="jobs.html">招聘</a>
+        <a href="contact.html">联系我们</a>
+        <a href="competition.html" class="nav-highlight">参赛说明</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero office-hero">
+      <div class="hero-content">
+        <p class="eyebrow">AI 工厂办公系统 / AI Factory Office OS</p>
+        <h1>中小工厂 AI 办公系统</h1>
+        <p class="hero-text">把企业展示、AI 报价、询盘管理、单据 OCR、文档问答、客服回复、多 Agent 协同、安全审核和系统监控整合到同一个工厂场景工作台。</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#module-map">进入模块中心</a>
+          <a class="btn secondary" href="admin.html#factoryOfficeEntrances">从后台进入</a>
+        </div>
+        <div class="mode-strip">
+          <span>运行模式：Demo</span>
+          <span>AI 接口：可切换 API</span>
+          <span>重要结果：人工确认</span>
+        </div>
+      </div>
+      <div class="hero-panel system-panel">
+        <div class="status-stack">
+          <div><span>AI 服务</span><strong>Demo 在线</strong></div>
+          <div><span>OCR 中心</span><strong>演示模式</strong></div>
+          <div><span>Excel / Word</span><strong>可导出</strong></div>
+          <div><span>安全策略</span><strong>已启用</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section compact-band">
+      <div class="human-check">
+        <strong>AI 生成，仅供参考，需人工确认。</strong>
+        <span>系统禁止 AI 自动承诺正式价格、交期和合同条款；报价、交付、合同签署必须由负责人确认。</span>
+      </div>
+    </section>
+
+    <section class="section" id="module-map">
+      <div class="section-heading">
+        <p class="eyebrow">模块中心</p>
+        <h2>所有工厂办公模块统一入口</h2>
+        <p>首页和后台均可进入这些模块；当前无真实接口的能力先以 Demo 模式演示，并显示 Demo/API 状态。</p>
+      </div>
+      <div class="module-grid">
+        <a href="#ocrCenter" class="module-tile"><span>01</span><strong>工厂单据 OCR 中心</strong><small>发货单、采购单、标签、日报、合同、报价单</small></a>
+        <a href="#docAssistant" class="module-tile"><span>02</span><strong>AI 文档助手</strong><small>总结、翻译、问答、风险提示</small></a>
+        <a href="#factoryChat" class="module-tile"><span>03</span><strong>工厂 AI 助手</strong><small>报价、订单、招聘、合同、维修记录</small></a>
+        <a href="#customerReply" class="module-tile"><span>04</span><strong>AI 客服回复</strong><small>询盘回复建议，关键承诺人工确认</small></a>
+        <a href="#agentDesk" class="module-tile"><span>05</span><strong>多 Agent 协同工作台</strong><small>报价、客服、OCR、销售、质检、安全 Agent</small></a>
+        <a href="#securityCenter" class="module-tile"><span>06</span><strong>AI 安全中心</strong><small>脱敏、审核、风险提示、操作日志</small></a>
+        <a href="#pdfCenter" class="module-tile"><span>07</span><strong>PDF 合同 / 订单解析</strong><small>合同、报价单、说明书、采购订单</small></a>
+        <a href="#exportCenter" class="module-tile"><span>08</span><strong>办公导出中心</strong><small>OCR、报价单、客户清单、询盘记录</small></a>
+        <a href="#stabilityCenter" class="module-tile"><span>09</span><strong>系统稳定性中心</strong><small>AI、OCR、接口、页面、响应慢记录</small></a>
+        <a href="#statusCenter" class="module-tile"><span>10</span><strong>工厂系统状态中心</strong><small>AI/OCR/PDF/Excel 状态与版本信息</small></a>
+      </div>
+    </section>
+
+    <section class="section factory-module" id="ocrCenter">
+      <div class="section-heading left">
+        <p class="eyebrow">工厂单据 OCR 中心</p>
+        <h2>识别发货单、采购单、产品标签、生产日报、合同和报价单</h2>
+      </div>
+      <div class="tool-layout">
+        <form class="tool-panel" id="ocrDemoForm">
+          <label>单据类型
+            <select id="ocrDocType">
+              <option>发货单</option>
+              <option>采购单</option>
+              <option>产品标签</option>
+              <option>生产日报</option>
+              <option>合同</option>
+              <option>报价单</option>
+            </select>
+          </label>
+          <label>粘贴或模拟识别内容
+            <textarea id="ocrInput" rows="8">客户：常州新能源设备有限公司
+单据：发货单
+产品：304 不锈钢连接件
+数量：500 件
+工艺：CNC 加工
+交期：2026-07-20
+备注：需核对图纸版本 V2，包装防磕碰。</textarea>
+          </label>
+          <div class="button-row wrap">
+            <button class="btn primary" type="submit">开始 OCR Demo</button>
+            <button class="btn secondary" type="button" data-demo-action="ocr-correct">AI 纠错</button>
+            <button class="btn secondary" type="button" data-demo-action="ocr-summary">AI 总结</button>
+            <button class="btn secondary" type="button" data-demo-action="ocr-translate">AI 翻译</button>
+            <button class="btn secondary" type="button" data-demo-action="ocr-qa">AI 问答</button>
+          </div>
+        </form>
+        <aside class="tool-result" id="ocrResult">
+          <p class="eyebrow">Demo 模式</p>
+          <h3>等待 OCR 识别</h3>
+          <p>上传真实图片能力可后续接入 Tesseract 或 OCR API；当前演示保留纠错、总结、翻译、问答和导出流程。</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section factory-module light" id="docAssistant">
+      <div class="section-heading left">
+        <p class="eyebrow">AI 文档助手</p>
+        <h2>合同总结、客户需求总结、采购单解释、外贸消息翻译和风险提示</h2>
+      </div>
+      <div class="tool-layout">
+        <form class="tool-panel" id="docAssistantForm">
+          <label>文档场景
+            <select id="docScene">
+              <option>合同总结与风险提示</option>
+              <option>客户需求总结</option>
+              <option>采购单解释</option>
+              <option>外贸消息翻译</option>
+              <option>文档问答</option>
+            </select>
+          </label>
+          <label>文档内容
+            <textarea id="docInput" rows="8">客户要求 304 不锈钢连接件 500 件，需 7 月 20 日前交付。客户希望按上次价格执行，并要求我方确认是否能承担延期赔偿条款。</textarea>
+          </label>
+          <label>提问
+            <input id="docQuestion" type="text" value="这份需求有哪些报价和合同风险？">
+          </label>
+          <div class="button-row wrap">
+            <button class="btn primary" type="submit">生成文档分析</button>
+            <button class="btn secondary" type="button" data-demo-action="doc-translate">翻译外贸消息</button>
+            <button class="btn ghost" type="button" data-export-target="docResult" data-export-name="AI文档助手结果" data-format="txt">导出 TXT</button>
+          </div>
+        </form>
+        <aside class="tool-result" id="docResult">
+          <p class="eyebrow">AI 文档助手</p>
+          <h3>等待分析</h3>
+          <p>可用于合同、采购单、客户需求、外贸消息和文档问答。</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section factory-module" id="factoryChat">
+      <div class="section-heading left">
+        <p class="eyebrow">工厂 AI 助手</p>
+        <h2>围绕报价、客户回复、订单整理、招聘文案、产品介绍、合同风险和设备维修记录答复</h2>
+      </div>
+      <div class="chat-demo">
+        <div class="prompt-chips">
+          <button data-chat-prompt="帮我把客户询盘整理成报价要点">报价要点</button>
+          <button data-chat-prompt="帮我生成 CNC 操作工招聘文案">招聘文案</button>
+          <button data-chat-prompt="帮我检查合同风险，特别是交期和赔偿">合同风险</button>
+          <button data-chat-prompt="帮我整理设备维修记录并给出预防建议">维修记录</button>
+        </div>
+        <form class="chat-box" id="factoryChatForm">
+          <textarea id="factoryChatInput" rows="4" placeholder="输入工厂办公问题"></textarea>
+          <button class="btn primary" type="submit">发送给工厂 AI 助手</button>
+        </form>
+        <div class="chat-result" id="factoryChatResult">
+          <div class="message ai">你好，我是工厂 AI 助手。当前为 Demo 模式，所有建议仅供参考，正式报价、交期和合同条款需人工确认。</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section factory-module light" id="customerReply">
+      <div class="section-heading left">
+        <p class="eyebrow">AI 客服回复</p>
+        <h2>根据客户询盘生成回复建议</h2>
+        <p>正式价格、交期、付款方式、质量承诺和合同条款必须人工确认。</p>
+      </div>
+      <div class="tool-layout">
+        <form class="tool-panel" id="customerReplyForm">
+          <label>客户询盘
+            <textarea id="replyInput" rows="7">你好，我们需要 316 不锈钢轴 200 件，有图纸，想知道大概价格和最快交期，能不能本周给方案？</textarea>
+          </label>
+          <label>回复语气
+            <select id="replyTone">
+              <option>专业稳妥</option>
+              <option>快速响应</option>
+              <option>外贸英文</option>
+            </select>
+          </label>
+          <button class="btn primary" type="submit">生成客服回复建议</button>
+        </form>
+        <aside class="tool-result" id="replyResult">
+          <p class="eyebrow">客服回复 Demo</p>
+          <h3>等待生成</h3>
+          <p>回复建议会自动加入人工确认提醒，避免 AI 自动承诺正式价格和交期。</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section factory-module" id="agentDesk">
+      <div class="section-heading left">
+        <p class="eyebrow">多 Agent 协同工作台</p>
+        <h2>报价、客服、OCR、销售、质检、安全 Agent 分工协作</h2>
+      </div>
+      <div class="agent-grid" id="agentDeskGrid">
+        <article class="agent-card" data-agent="报价 Agent"><span>报价</span><h3>报价 Agent</h3><p>整理材料、数量、工艺、交期，输出初步报价范围和待确认项。</p><button class="btn-small" data-demo-action="agent-run">运行</button></article>
+        <article class="agent-card" data-agent="客服 Agent"><span>客服</span><h3>客服 Agent</h3><p>把客户询盘转成微信/邮件回复建议，并提醒人工确认承诺项。</p><button class="btn-small" data-demo-action="agent-run">运行</button></article>
+        <article class="agent-card" data-agent="OCR Agent"><span>OCR</span><h3>OCR Agent</h3><p>识别发货单、采购单、标签和日报，生成结构化字段。</p><button class="btn-small" data-demo-action="agent-run">运行</button></article>
+        <article class="agent-card" data-agent="销售 Agent"><span>销售</span><h3>销售 Agent</h3><p>跟进询盘状态，整理客户清单、报价记录和下次沟通重点。</p><button class="btn-small" data-demo-action="agent-run">运行</button></article>
+        <article class="agent-card" data-agent="质检 Agent"><span>质检</span><h3>质检 Agent</h3><p>读取生产日报和质检记录，提示异常批次、返工项和追溯信息。</p><button class="btn-small" data-demo-action="agent-run">运行</button></article>
+        <article class="agent-card" data-agent="安全 Agent"><span>安全</span><h3>安全 Agent</h3><p>审核敏感信息、合同风险、报价风险和 AI 回复越权承诺。</p><button class="btn-small" data-demo-action="agent-run">运行</button></article>
+      </div>
+      <div class="tool-result wide" id="agentResult">
+        <p class="eyebrow">Agent 执行日志</p>
+        <p>选择一个 Agent 运行 Demo。关键结果需要负责人确认后才能对外发送。</p>
+      </div>
+    </section>
+
+    <section class="section factory-module light" id="securityCenter">
+      <div class="section-heading left">
+        <p class="eyebrow">AI 安全中心</p>
+        <h2>敏感信息脱敏、AI 回复审核、报价风险提醒、合同风险提示和操作日志</h2>
+      </div>
+      <div class="security-layout">
+        <form class="tool-panel" id="securityForm">
+          <label>待审核内容
+            <textarea id="securityInput" rows="7">客户手机号 13812345678，报价可直接承诺 7 天交付，延期由我方全额赔偿。合同按客户模板直接签。</textarea>
+          </label>
+          <button class="btn primary" type="submit">执行安全审核与脱敏</button>
+        </form>
+        <aside class="tool-result" id="securityResult">
+          <p class="eyebrow">安全策略</p>
+          <ul class="clean-list">
+            <li>禁止 AI 自动承诺正式价格、交期和合同条款。</li>
+            <li>手机号、客户姓名、合同编号等敏感信息需脱敏。</li>
+            <li>高风险条款必须进入人工确认流程。</li>
+          </ul>
+        </aside>
+      </div>
+      <div class="log-strip" id="securityLog">
+        <span>操作日志：AI 安全中心已启用 Demo 审核规则。</span>
+      </div>
+    </section>
+
+    <section class="section factory-module" id="pdfCenter">
+      <div class="section-heading left">
+        <p class="eyebrow">PDF 合同 / 订单解析</p>
+        <h2>解析合同 PDF、报价单 PDF、产品说明书 PDF、采购订单 PDF 和客户需求文档</h2>
+      </div>
+      <div class="tool-layout">
+        <form class="tool-panel" id="pdfParserForm">
+          <label>PDF 类型
+            <select id="pdfType">
+              <option>合同 PDF</option>
+              <option>报价单 PDF</option>
+              <option>产品说明书 PDF</option>
+              <option>采购订单 PDF</option>
+              <option>客户需求文档</option>
+            </select>
+          </label>
+          <label>模拟提取文字
+            <textarea id="pdfInput" rows="7">合同约定：供应商需在 2026-07-20 前完成 500 件 304 不锈钢连接件交付。客户要求延期赔偿、质量追溯、图纸版本确认。</textarea>
+          </label>
+          <button class="btn primary" type="submit">解析 PDF Demo</button>
+        </form>
+        <aside class="tool-result" id="pdfResult">
+          <p class="eyebrow">PDF 解析 Demo</p>
+          <h3>等待解析</h3>
+          <p>真实 PDF 文字层、扫描 OCR、转 Word 能力可后续接入现有办公软件的 PDF 模块。</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section factory-module light" id="exportCenter">
+      <div class="section-heading left">
+        <p class="eyebrow">办公导出中心</p>
+        <h2>导出 OCR 结果、报价单、客户清单和询盘记录</h2>
+      </div>
+      <div class="export-center">
+        <div class="export-options">
+          <label><input type="checkbox" checked value="OCR 结果"> OCR 结果</label>
+          <label><input type="checkbox" checked value="报价单"> 报价单</label>
+          <label><input type="checkbox" checked value="客户清单"> 客户清单</label>
+          <label><input type="checkbox" checked value="询盘记录"> 询盘记录</label>
+        </div>
+        <div class="button-row wrap">
+          <button class="btn primary" data-demo-action="export-excel">导出 Excel</button>
+          <button class="btn secondary" data-demo-action="export-word">导出 Word</button>
+          <button class="btn ghost" data-demo-action="export-txt">导出 TXT</button>
+        </div>
+        <div class="tool-result wide" id="exportResult">
+          <p class="eyebrow">导出 Demo</p>
+          <p>选择数据范围后，可导出为 Excel / Word / TXT 演示文件。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section factory-module" id="stabilityCenter">
+      <div class="section-heading left">
+        <p class="eyebrow">系统稳定性中心</p>
+        <h2>记录 AI 调用失败、OCR 识别失败、接口错误、页面错误、响应慢和卡顿问题</h2>
+      </div>
+      <div class="stability-board" id="stabilityBoard">
+        <div class="bug-row" data-status="待处理"><strong>AI 调用失败</strong><span>报价 Agent 超时，响应耗时 4200ms</span><em>待处理</em><button class="btn-small" data-demo-action="bug-next">更新状态</button></div>
+        <div class="bug-row" data-status="已解决"><strong>OCR 识别失败</strong><span>产品标签图片过暗，建议重新上传</span><em>已解决</em><button class="btn-small" data-demo-action="bug-next">更新状态</button></div>
+        <div class="bug-row" data-status="已忽略"><strong>页面卡顿</strong><span>移动端首次加载样式较慢，Demo 环境偶发</span><em>已忽略</em><button class="btn-small" data-demo-action="bug-next">更新状态</button></div>
+      </div>
+    </section>
+
+    <section class="section factory-module light" id="statusCenter">
+      <div class="section-heading left">
+        <p class="eyebrow">工厂系统状态中心</p>
+        <h2>AI、OCR、PDF、Excel、Demo/API 模式、模型、版本、构建时间和响应耗时</h2>
+      </div>
+      <div class="status-grid">
+        <div class="status-card"><span>AI 服务状态</span><strong>Demo Ready</strong><small>模型：factory-demo-model</small></div>
+        <div class="status-card"><span>OCR 状态</span><strong>Demo Ready</strong><small>支持单据模拟识别</small></div>
+        <div class="status-card"><span>PDF 状态</span><strong>Demo Ready</strong><small>合同 / 订单解析演示</small></div>
+        <div class="status-card"><span>Excel 状态</span><strong>Ready</strong><small>HTML .xls 演示导出</small></div>
+        <div class="status-card"><span>运行模式</span><strong id="runModeText">Demo 模式</strong><small>可后续切换 API 模式</small></div>
+        <div class="status-card"><span>版本号</span><strong>v2.0 Factory OS</strong><small id="buildTimeText">构建时间：2026-07-09</small></div>
+        <div class="status-card"><span>响应耗时</span><strong id="latencyText">128ms</strong><small>本地静态演示</small></div>
+        <div class="status-card"><span>部署方式</span><strong>GitHub Pages</strong><small>纯前端可演示</small></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 AI Factory Office OS Demo</p>
+    <p>AI 生成，仅供参考，需人工确认；正式价格、交期和合同条款以人工审核为准。</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
