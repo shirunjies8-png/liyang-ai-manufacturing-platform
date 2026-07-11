@@ -1332,3 +1332,56 @@ textarea:focus {
     padding-bottom: 48px;
   }
 }
+
+/* Local manufacturing imagery */
+.hero-panel {
+  background:
+    linear-gradient(160deg, rgba(31, 43, 60, 0.58), rgba(49, 66, 89, 0.8)),
+    url("../images/workshop.png") center / cover no-repeat;
+}
+
+.page-hero.factory-bg {
+  background:
+    linear-gradient(135deg, rgba(24, 33, 47, 0.82), rgba(22, 127, 95, 0.52)),
+    url("../images/workshop.png") center / cover no-repeat;
+  color: #fff;
+}
+
+.page-hero.factory-bg p,
+.page-hero.factory-bg .eyebrow {
+  color: #fff;
+}
+
+.product-visual {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.product-visual.rings {
+  background-image:
+    linear-gradient(135deg, rgba(31, 94, 255, 0.08), rgba(22, 127, 95, 0.1)),
+    url("../images/product-parts.png");
+}
+
+.product-visual.cnc {
+  background-image:
+    linear-gradient(135deg, rgba(180, 107, 0, 0.08), rgba(31, 94, 255, 0.08)),
+    url("../images/cnc-machine.png");
+}
+
+.product-visual.lathe {
+  background-image:
+    linear-gradient(135deg, rgba(22, 127, 95, 0.1), rgba(37, 50, 68, 0.16)),
+    url("../images/workshop.png");
+}
+
+@media (max-width: 720px) {
+  .product-visual {
+    min-height: 210px;
+  }
+
+  .page-hero.factory-bg {
+    background-position: center;
+  }
+}
